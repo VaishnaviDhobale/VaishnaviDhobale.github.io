@@ -19,14 +19,14 @@ export default function About() {
       id="about"
       zIndex={-1}
     >
-      <Text fontWeight={"600"} fontSize="40px" pt="100px" pb={"30px"}>
+      <Text fontWeight={"600"} fontSize="40px" pb={"30px"}>
         About Me
       </Text>
 
 
       <Box display={"grid"} gridTemplateColumns="30% 1fr">
         <Box>
-          <Img src={Pic} borderRadius="50%" width={"150px"}></Img>
+          <Img src={Pic} borderRadius="50%" width={"150px"} className = "home-img"></Img>
         </Box>
         <Box position={"relative"} top = "20px">
           <Text>

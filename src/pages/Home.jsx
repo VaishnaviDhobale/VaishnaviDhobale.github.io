@@ -135,6 +135,7 @@ export default function Home() {
                 backgroundColor: "teal",
                 borderRadius: "5px",
               }}
+              id="resume-link-1"
             >
               Resume
             </a>
@@ -145,6 +146,7 @@ export default function Home() {
             p={"9px 15px"}
             borderRadius="5px"
             cursor={"pointer"}
+            id="resume-link-2"
           >
             <MdDownload color="white" size={"30px"} />
           </Box>

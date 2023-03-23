@@ -17,11 +17,29 @@ export default function Main() {
       </Box>
 
       <Home />
+      <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
+
+
       <About />
+      <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
+
+
       <Skills />
+      <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
+
+
       <Projects />
+      <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
+
+
       <Contact />
+      <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
+
+
       <Resume />
+      <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
+      
+
       <Github />
     </>
   );
