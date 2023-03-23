@@ -1,12 +1,10 @@
 import { Box, Text } from "@chakra-ui/react";
-import Navbar from "./Navbar";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillMail } from "react-icons/ai";
 import { AiFillPhone } from "react-icons/ai";
 import { MdDownload } from "react-icons/md";
 import { useState } from "react";
-import About from "./About";
 
 export default function Home() {
   let [phone] = useState(true);
@@ -26,13 +24,7 @@ export default function Home() {
     margin: "auto",
     padding: "10px",
   };
-  return (
-    <>
-    <Box  position="sticky" top = "0px" right="0px" zIndex={1}>
-      <Navbar />
-    </Box>
-
-      <Box
+  return <Box
         id="home"
         w={{
           base : "100vh",
@@ -53,12 +45,12 @@ export default function Home() {
         <Box>
           <Text fontWeight={"600"} fontSize="43px" m={0}>
             Welcome, This is{" "}
-            <span style={{ color: "teal" }}>Vaishnavi Dhobale</span> <br />
+            <span id = "user-detail-name" style={{ color: "teal" }}>Vaishnavi Dhobale</span> <br />
           </Text>
           <Text style={{ fontSize: "25px" }} m="20px 0">
             Full Stack Web Developer (MERN)
           </Text>
-          <Text fontWeight={"400"}>
+          <Text fontWeight={"400"} id = "user-detail-intro">
             A passionate aspiring Full Stack Web Developer Skilled in MERN
             stack. Developing websites using JavaScript, React, Node, Chakra-UI,
             MongoDB and having more than 1000+ hours of coding experience in
@@ -79,6 +71,7 @@ export default function Home() {
             style={{ color: "black" }}
             href={"https://github.com/VaishnaviDhobale"}
             target="_blank"
+            id="contact-github"
           >
             <AiFillGithub
               size={"30"}
@@ -91,6 +84,7 @@ export default function Home() {
             style={{ color: "black" }}
             href={"https://www.linkedin.com/in/vaishnavi-dhobale-89243022b/"}
             target="_blank"
+            id="contact-linkedin"
           >
             <AiFillLinkedin
               style={linkedin ? iconStyle : null}
@@ -103,6 +97,7 @@ export default function Home() {
             style={{ color: "black" }}
             href={"https://mail.google.com/mail/u/0/#inbox"}
             target="_blank"
+            id="contact-email"
           >
             <AiFillMail
               style={email ? iconStyle : null}
@@ -111,7 +106,7 @@ export default function Home() {
               onMouseLeave={() => setEmail(false)}
             />
           </a>
-          <AiFillPhone style={phone ? iconStyle : null} size={"30"} />
+          <AiFillPhone id="contact-phone" style={phone ? iconStyle : null} size={"30"} />
         </Box>
 
         {/* phone  */}
@@ -155,10 +150,4 @@ export default function Home() {
           </Box>
         </Box>
       </Box>
-
-
-
-      <About />
-    </>
-  );
 }
