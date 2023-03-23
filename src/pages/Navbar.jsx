@@ -3,13 +3,13 @@ import { HashLink as Link } from "react-router-hash-link";
 
 export default function Navbar() {
   let navArr = [
-    { to: "#home", text: "Home" },
-    { to: "#about", text: "About" },
-    { to: "#education", text: "Education" },
-    { to: "#skills", text: "Skills" },
-    { to: "#projects", text: "Projects" },
-    { to: "#contact", text: "Contact" },
-    { to: "#resume", text: "Resume" },
+    { to: "#home", className:  "nav-link home", text: "Home" },
+    { to: "#about", className:  "nav-link about", text: "About" },
+    { to: "#education", className:  "nav-link education", text: "Education" },
+    { to: "#skills", className:  "nav-link skills", text: "Skills" },
+    { to: "#projects", className:  "nav-link projects", text: "Projects" },
+    { to: "#contact", className:  "nav-link contact", text: "Contact" },
+    { to: "#resume", className:  "nav-link resume", text: "Resume" },
   ];
 
   const navStyle = {
@@ -31,7 +31,7 @@ export default function Navbar() {
     >
       {navArr.map((el) => {
         return (
-          <Link to={el.to} style={navStyle}>
+          <Link to={el.to} style={navStyle} className = {el.className}>
             {el.text}
           </Link>
         );
