@@ -1,8 +1,49 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Img, Text } from "@chakra-ui/react";
+import Git1 from "../images/git-1.png";
+import Git2 from "../images/git-2.png";
+import Git3 from "../images/git-3.png";
+import Git4 from "../images/git-4.png";
+import Git5 from "../images/git-5.png";
+import GitHubCalendar from "react-github-calendar";
 
-
-export default function Github(){
-    return <Box>
-        <h1>GitHub</h1>
+export default function Github() {
+  return (
+    <Box w="80%" margin={"auto"} textAlign="center">
+      <Text fontWeight={"600"} fontSize="40px" pb={"30px"}>
+        GitHub
+      </Text>
+      <Box margin="auto">
+        <Box margin="auto" boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" width = "900px" p ="20px">
+          <GitHubCalendar style={{margin : "auto", width : "100%"}} username="vaishnavidhobale" />
+        </Box>
+        <Img
+          id="github-top-langs"
+          margin="auto"
+          mt="70px"
+          boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
+          src={Git2}
+        ></Img>
+        <Img
+          id="github-stats-card"
+          margin="auto"
+          mt="70px"
+          boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
+          src={Git3}
+        ></Img>
+        <Img
+          id="github-streak-stats"
+          margin="auto"
+          mt="70px"
+          boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
+          src={Git4}
+        ></Img>
+        <Img
+          margin="auto"
+          mt="70px"
+          boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
+          src={Git5}
+        ></Img>
+      </Box>
     </Box>
+  );
 }

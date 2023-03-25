@@ -25,13 +25,13 @@ export default function Navbar() {
       justifyContent="flex-end"
       p="20px 5px"
       mb={"50px"}
-      boxShadow =" rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px"
+      // boxShadow =" rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px"
       backgroundColor={"white"}
       id = "nav-menu"
     >
       {navArr.map((el) => {
         return (
-          <Link to={el.to} style={navStyle} className = {el.className}>
+          <Link to={el.to} style={navStyle} className = {el.className} smooth>
             {el.text}
           </Link>
         );

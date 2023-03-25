@@ -70,7 +70,7 @@ export default function Home() {
           <a
             style={{ color: "black" }}
             href={"https://github.com/VaishnaviDhobale"}
-            target="_blank"
+            target="blank"
             id="contact-github"
           >
             <AiFillGithub
@@ -83,7 +83,7 @@ export default function Home() {
           <a
             style={{ color: "black" }}
             href={"https://www.linkedin.com/in/vaishnavi-dhobale-89243022b/"}
-            target="_blank"
+            target="blank"
             id="contact-linkedin"
           >
             <AiFillLinkedin
@@ -96,7 +96,7 @@ export default function Home() {
           <a
             style={{ color: "black" }}
             href={"https://mail.google.com/mail/u/0/#inbox"}
-            target="_blank"
+            target="blank"
             id="contact-email"
           >
             <AiFillMail
@@ -125,7 +125,7 @@ export default function Home() {
         <Box display={"flex"}>
           <Box mt="30px" mr={"10px"}>
             <a
-              href="https://drive.google.com/file/d/1ODRfASGOU321jxkN2hiH4Bd3Y963mu18/view?usp=sharing"
+              href="https://drive.google.com/file/d/1L8rsoQnuVyGMa31PXjTBClH5SnMDJ23m/view?usp=sharing"
               target="blank"
               style={{
                 textDecoration: "none",
@@ -135,7 +135,7 @@ export default function Home() {
                 backgroundColor: "teal",
                 borderRadius: "5px",
               }}
-              id="resume-link-1"
+              id="resume-button-1"
             >
               Resume
             </a>
@@ -146,7 +146,7 @@ export default function Home() {
             p={"9px 15px"}
             borderRadius="5px"
             cursor={"pointer"}
-            id="resume-link-2"
+            id="resume-button-2"
           >
             <MdDownload color="white" size={"30px"} />
           </Box>

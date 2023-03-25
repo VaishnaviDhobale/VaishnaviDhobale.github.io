@@ -31,16 +31,13 @@ export default function Main() {
       <Projects />
       <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
 
+      <Github />
+      <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
 
       <Contact />
       <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
 
-
       <Resume />
-      <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
-      
-
-      <Github />
     </>
   );
 }

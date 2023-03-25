@@ -18,6 +18,7 @@ export default function About() {
       }}
       id="about"
       zIndex={-1}
+      textAlign="center"
     >
       <Text fontWeight={"600"} fontSize="40px" pb={"30px"}>
         About Me
@@ -28,7 +29,7 @@ export default function About() {
         <Box>
           <Img src={Pic} borderRadius="50%" width={"150px"} className = "home-img"></Img>
         </Box>
-        <Box position={"relative"} top = "20px">
+        <Box position={"relative"} top = "20px" textAlign={"left"}>
           <Text>
             Hi Everyone, My name is{" "}
             <span style={{ color: "teal" }}>Vaishnavi Dhobale</span> and I am
