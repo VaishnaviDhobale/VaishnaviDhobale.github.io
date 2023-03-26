@@ -5,7 +5,7 @@ import MyResume from "../files/Vaishnavi-Dhobale-Resume.pdf"
 
 export default function Resume() {
   return (
-    <Box w="80%" margin={"auto"} textAlign="center">
+    <Box w="200px" margin={"auto"} textAlign="center">
       {/* <Text fontWeight={"600"} fontSize="40px" pb={"30px"}>
         Resume
       </Text> */}

@@ -8,8 +8,8 @@ export default function Navbar() {
     { to: "#education", className:  "nav-link education", text: "Education" },
     { to: "#skills", className:  "nav-link skills", text: "Skills" },
     { to: "#projects", className:  "nav-link projects", text: "Projects" },
+    {to : "#github", className : "" , text : "github"},
     { to: "#contact", className:  "nav-link contact", text: "Contact" },
-    { to: "#resume", className:  "nav-link resume", text: "Resume" },
   ];
 
   const navStyle = {

@@ -26,20 +26,16 @@ export default function Home() {
   return <Box
         id="home"
         w={{
-          base : "100vh",
-          sm : "100%",
+          base : "80%",
+          sm : "90%",
           md : "80%",
           lg : "700px"
         }}
-        m={{
-          base : "20px",
-          sm : "20px",
-          md :"auto",
-          lg :"auto"
-        }}
+        m= "auto"
         display={"flex"}
         flexDirection="column"
         alignItems="center"
+        // border = "1px solid red"
       >
         <Box>
           <Text fontWeight={"600"} fontSize="43px" m={0}>

@@ -7,11 +7,12 @@ import Skills from "./Skills";
 import Contact from "./Contact";
 import Resume from "./Resume";
 import Github from "./Github"
+import Education from "./Education";
 
 
 export default function Main() {
   return (
-    <>
+    <Box>
       <Box position="sticky" top="0px" right="0px" zIndex={1}>
         <Navbar />
       </Box>
@@ -26,6 +27,8 @@ export default function Main() {
       <About />
       <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
 
+      <Education />
+      <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
 
       <Skills />
       <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
@@ -39,6 +42,6 @@ export default function Main() {
 
       <Contact />
 
-    </>
+    </Box>
   );
 }

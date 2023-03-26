@@ -26,11 +26,19 @@ export default function About() {
       </Text>
 
 
-      <Box display={"grid"} gridTemplateColumns="30% 1fr">
+      <Box display={"grid"} gridTemplateColumns= {{
+        base : "",
+        sm : "",
+        md :"30% 1fr"
+      }}>
         <Box>
-          <Img src={Pic} borderRadius="50%" width={"150px"} className = "home-img"></Img>
+          <Img margin={"auto"} src={Pic} borderRadius="50%" width={"150px"} className = "home-img"></Img>
         </Box>
-        <Box position={"relative"} top = "20px" textAlign={"left"}>
+        <Box textAlign={"left"} margin = "auto" width = {{
+          base : "90%",
+          sm : "85%",
+          md : "95%"
+        }}>
           <Text id = "user-detail-intro">
             Hi Everyone, My name is{" "}
             <span style={{ color: "teal" }}>Vaishnavi Dhobale</span> and I am
