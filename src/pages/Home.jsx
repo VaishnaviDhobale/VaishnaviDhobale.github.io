@@ -5,6 +5,7 @@ import { AiFillMail } from "react-icons/ai";
 import { AiFillPhone } from "react-icons/ai";
 import { MdDownload } from "react-icons/md";
 import { useState } from "react";
+import Resume from "../files/Vaishnavi-Dhobale-Resume.pdf"
 
 export default function Home() {
   let [phone] = useState(true);
@@ -148,7 +149,7 @@ export default function Home() {
             cursor={"pointer"}
             id="resume-button-2"
           >
-            <MdDownload color="white" size={"30px"} />
+            <a href={Resume} download><MdDownload color="white" size={"30px"} /></a>
           </Box>
         </Box>
       </Box>

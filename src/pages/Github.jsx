@@ -21,27 +21,27 @@ export default function Github() {
           margin="auto"
           mt="70px"
           boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
-          src={Git2}
+          src={"https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact"}
         ></Img>
         <Img
           id="github-stats-card"
           margin="auto"
           mt="70px"
           boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
-          src={Git3}
+          src={"https://github-readme-stats.vercel.app/api?username=VaishnaviDhobale&hide=contribs,prs"}
         ></Img>
         <Img
           id="github-streak-stats"
           margin="auto"
           mt="70px"
           boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
-          src={Git4}
+          src={"https://github-readme-streak-stats.herokuapp.com?user=VaishnaviDhobale"}
         ></Img>
         <Img
           margin="auto"
           mt="70px"
           boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
-          src={Git5}
+          src={"https://github-profile-trophy.vercel.app/?username=VaishnaviDhobale"}
         ></Img>
       </Box>
     </Box>
