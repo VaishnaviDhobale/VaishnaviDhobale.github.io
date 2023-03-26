@@ -35,7 +35,7 @@ export default function Github() {
           margin="auto"
           mt="70px"
           boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
-          src={Git4}
+          src={"https://github-readme-streak-stats.herokuapp.com?user=VaishnaviDhobale"}
         ></Img>
         <Img
           margin="auto"
