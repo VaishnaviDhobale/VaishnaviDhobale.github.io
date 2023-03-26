@@ -149,7 +149,7 @@ export default function Home() {
             cursor={"pointer"}
             id="resume-button-2"
           >
-            <a href={Resume} download><MdDownload color="white" size={"30px"} /></a>
+            <a href={Resume} download = "Vaishnavi-Dhobale-Resume"><MdDownload color="white" size={"30px"} /></a>
           </Box>
         </Box>
       </Box>

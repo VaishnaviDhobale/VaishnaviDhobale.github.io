@@ -17,6 +17,7 @@ export default function About() {
         lg: "auto",
       }}
       id="about"
+      className="about section"
       zIndex={-1}
       textAlign="center"
     >

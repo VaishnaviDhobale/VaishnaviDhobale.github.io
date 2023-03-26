@@ -21,7 +21,7 @@ export default function Github() {
           margin="auto"
           mt="70px"
           boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
-          src={"https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact"}
+          src={"https://github-readme-stats.vercel.app/api/top-langs/?username=VaishnaviDhobale&layout=compact"}
         ></Img>
         <Img
           id="github-stats-card"
