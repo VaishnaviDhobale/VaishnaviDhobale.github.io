@@ -31,7 +31,7 @@ export default function About() {
           <Img src={Pic} borderRadius="50%" width={"150px"} className = "home-img"></Img>
         </Box>
         <Box position={"relative"} top = "20px" textAlign={"left"}>
-          <Text>
+          <Text id = "user-detail-intro">
             Hi Everyone, My name is{" "}
             <span style={{ color: "teal" }}>Vaishnavi Dhobale</span> and I am
             from
