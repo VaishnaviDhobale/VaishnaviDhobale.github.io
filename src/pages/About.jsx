@@ -1,7 +1,11 @@
 import { Box, Img, Text } from "@chakra-ui/react";
+import { useContext } from "react";
 import Pic from "../images/fully final.png";
+import { Theme } from "../ThemeContest/ThemeProvider";
 
 export default function About() {
+  let {theme,setTheme}= useContext(Theme);
+  // console.log(theme)
   return (
     <Box
       w={{

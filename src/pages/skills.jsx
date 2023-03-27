@@ -14,10 +14,8 @@ import { BsGithub } from "react-icons/bs";
 import { SiNetlify } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import { SiPhp } from "react-icons/si";
-import { useState } from "react";
 
 export default function Skills() {
-  const [style, setStyle] = useState(false);
 
   const iconStyle = {
     color: "teal",

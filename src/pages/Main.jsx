@@ -8,11 +8,14 @@ import Contact from "./Contact";
 // import Resume from "./Resume";
 import Github from "./Github"
 import Education from "./Education";
+import { useContext } from "react";
+import { Theme } from "../ThemeContest/ThemeProvider";
 
 
 export default function Main() {
+  let {theme}= useContext(Theme);
   return (
-    <Box>
+    <Box backgroundColor = {theme ? "white" : "#141925"} color = {theme ? "black" : "white"} boxSizing = "border-box" pb = "50px">
       <Box position="sticky" top="0px" right="0px" zIndex={1}>
         <Navbar />
       </Box>

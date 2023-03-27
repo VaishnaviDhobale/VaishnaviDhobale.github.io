@@ -3,15 +3,19 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillMail } from "react-icons/ai";
 import { AiFillPhone } from "react-icons/ai";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { MdDownload } from "react-icons/md";
 import MyResume from "../files/Vaishnavi-Dhobale-Resume.pdf"
+import { Theme } from "../ThemeContest/ThemeProvider";
 
 export default function Home() {
   let [phone] = useState(true);
   let [github, setGithub] = useState(false);
   let [linkedin, setLinkedin] = useState(false);
   let [email, setEmail] = useState(false);
+
+  let {theme}= useContext(Theme);
+
 
   let iconStyle = {
     borderBottom: "3px solid red",
@@ -78,6 +82,7 @@ export default function Home() {
           >
             <AiFillGithub
               size={"30"}
+              color={theme ? "black" : "white"}
               style={github ? iconStyle : null}
               onMouseEnter={() => setGithub(true)}
               onMouseLeave={() => setGithub(false)}
@@ -92,6 +97,7 @@ export default function Home() {
             <AiFillLinkedin
               style={linkedin ? iconStyle : null}
               size={"30"}
+              color={theme ? "black" : "white"}
               onMouseEnter={() => setLinkedin(true)}
               onMouseLeave={() => setLinkedin(false)}
             />
@@ -105,6 +111,7 @@ export default function Home() {
             <AiFillMail
               style={email ? iconStyle : null}
               size={"30"}
+              color={theme ? "black" : "white"}
               onMouseEnter={() => setEmail(true)}
               onMouseLeave={() => setEmail(false)}
             />

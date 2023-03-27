@@ -1,11 +1,18 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Button } from "@chakra-ui/react";
 import { IconContext } from "react-icons";
 import { HashLink as Link } from "react-router-hash-link";
 import { MdDehaze } from "react-icons/md";
 import { useState } from "react";
+import { useContext } from "react";
+import { Theme } from "../ThemeContest/ThemeProvider";
+import {IoMdMoon} from "react-icons/io"
+
 
 export default function Navbar() {
   let [show, setShow] = useState(false);
+
+  let {theme,setTheme}= useContext(Theme);
+  console.log(theme)
 
   let navArr = [
     { to: "#home", className: "nav-link home", text: "Home" },
@@ -20,7 +27,7 @@ export default function Navbar() {
   const navStyle = {
     marginRight: "30px",
     textDecoration: "none",
-    color: "black",
+    color: theme? "black" : "white",
     fontSize: "19px",
     marginBottom : "20px"
   };
@@ -33,6 +40,7 @@ export default function Navbar() {
 
   return (
     <>
+    {/* responsive Button  */}
       <Box
         display={{
           base: "block",
@@ -41,17 +49,20 @@ export default function Navbar() {
         }}
         mr="300px"
         width= {show ? "200px" : "50px"}
-        backgroundColor={"white"}
+        backgroundColor={theme ? "white" : "#141925"}
+        cursor = "pointer"
         // position="sticky" top="0px" left="0px" zIndex={1}
       >
         <IconContext.Provider value={{ size: 40 }} >
           <MdDehaze
-            style={{ backgroundColor: show ? "teal" : "#f4f4f4", padding: "5px" }}
+            style={{ backgroundColor: show ? "#f4f4f4" : "teal", padding: "5px",borderRadius : "5px"}}
             onClick={() => setShow((prev) => !prev)}
 
           />
         </IconContext.Provider>
       </Box>
+
+
 
       {/* navbar */}
       <Box
@@ -78,7 +89,7 @@ export default function Navbar() {
           sm: "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
           md: "none",
         }}
-        backgroundColor={"white"}
+        backgroundColor={ theme ? "white" : "#141925"}
         id="nav-menu"
         w={{
           base: "200px",
@@ -100,6 +111,27 @@ export default function Navbar() {
         })}
         <a style={navStyle} className= "nav-link resume" target = "blank" href="https://drive.google.com/file/d/1aqnygVFoSqF6V8uCOCFwuNbfPNQwyw_-/view?usp=sharing">Resume</a>
       </Box>
+     <Box  width = "100%">
+     <Button onClick = {()=>{
+        setTheme((prev)=> !prev)
+      }} position={{
+        base : "absolute",
+        sm : "absolute",
+        md : "fixed"
+      }} top = {{
+        base : "0px",
+        sm : "0px",
+        md : "11px"
+      }} 
+        right = {{
+          base : "0px",
+          sm : "0px",
+          md : "750px",
+          lg : "none"
+        }}
+        backgroundColor = {"teal"}
+      ><IoMdMoon size= {"20px"}></IoMdMoon></Button>
+     </Box>
     </>
   );
 }
