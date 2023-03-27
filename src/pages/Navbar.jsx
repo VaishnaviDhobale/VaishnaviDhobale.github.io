@@ -1,8 +1,8 @@
-import { Box, useDisclosure } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { IconContext } from "react-icons";
 import { HashLink as Link } from "react-router-hash-link";
 import { MdDehaze } from "react-icons/md";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Navbar() {
   let [show, setShow] = useState(false);
