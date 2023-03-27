@@ -32,6 +32,12 @@ export default function Home() {
           lg : "700px"
         }}
         m= "auto"
+        ml = {{
+          base : "50px",
+          sm :  "50px" ,
+          md : "auto"
+        }}
+
         display={"flex"}
         flexDirection="column"
         alignItems="center"

@@ -1,15 +1,20 @@
-import { Box } from "@chakra-ui/react";
+import { Box, useDisclosure } from "@chakra-ui/react";
+import { IconContext } from "react-icons";
 import { HashLink as Link } from "react-router-hash-link";
+import { MdDehaze } from "react-icons/md";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+  let [show, setShow] = useState(false);
+
   let navArr = [
-    { to: "#home", className:  "nav-link home", text: "Home" },
-    { to: "#about", className:  "nav-link about", text: "About" },
-    { to: "#education", className:  "nav-link education", text: "Education" },
-    { to: "#skills", className:  "nav-link skills", text: "Skills" },
-    { to: "#projects", className:  "nav-link projects", text: "Projects" },
-    {to : "#github", className : "" , text : "github"},
-    { to: "#contact", className:  "nav-link contact", text: "Contact" },
+    { to: "#home", className: "nav-link home", text: "Home" },
+    { to: "#about", className: "nav-link about", text: "About" },
+    { to: "#education", className: "nav-link education", text: "Education" },
+    { to: "#skills", className: "nav-link skills", text: "Skills" },
+    { to: "#projects", className: "nav-link projects", text: "Projects" },
+    { to: "#github", className: "", text: "github" },
+    { to: "#contact", className: "nav-link contact", text: "Contact" },
   ];
 
   const navStyle = {
@@ -17,25 +22,81 @@ export default function Navbar() {
     textDecoration: "none",
     color: "black",
     fontSize: "19px",
+    marginBottom : "20px"
+  };
+
+  const navbarResStyle = {
+    base: show ? "grid" : "none",
+    sm: show ? "grid" : "none",
+    md: "flex",
   };
 
   return (
-    <Box
-      display={"flex"}
-      justifyContent="flex-end"
-      p="20px 5px"
-      mb={"50px"}
-      // boxShadow =" rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px"
-      backgroundColor={"white"}
-      id = "nav-menu"
-    >
-      {navArr.map((el) => {
-        return (
-          <Link to={el.to} style={navStyle} className = {el.className} smooth>
-            {el.text}
-          </Link>
-        );
-      })}
-    </Box>
+    <>
+      <Box
+        display={{
+          base: "block",
+          sm: "block",
+          md: "none",
+        }}
+        mr="300px"
+        width= {show ? "200px" : "50px"}
+        backgroundColor={"white"}
+      >
+        <IconContext.Provider value={{ size: 40 }}>
+          <MdDehaze
+            style={{ backgroundColor: show ? "teal" : "#f4f4f4", padding: "5px" }}
+            onClick={() => setShow((prev) => !prev)}
+          />
+        </IconContext.Provider>
+      </Box>
+
+      {/* navbar */}
+      <Box
+        display={navbarResStyle}
+        justifyContent={{
+          base: "center",
+          sm: "flex-start",
+          md: "flex-end",
+        }}
+        p="5px"
+        pt = "20px"
+        pl = {{
+          base : "20px",
+          sm : "20px"
+        }}
+        mb="50px"
+        pb={{
+          base: "70px",
+          sm: "70px",
+          md: "20px",
+        }}
+        boxShadow={{
+          base: "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
+          sm: "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
+          md: "none",
+        }}
+        backgroundColor={"white"}
+        id="nav-menu"
+        w={{
+          base: "200px",
+          sm: "200px",
+          md: "auto",
+        }}
+        position={{
+          base: "absolute",
+          sm: "absolute",
+          md: "sticky",
+        }}
+      >
+        {navArr.map((el) => {
+          return (
+            <Link to={el.to}  style={navStyle} className={el.className} smooth>
+              {el.text}
+            </Link>
+          );
+        })}
+      </Box>
+    </>
   );
 }

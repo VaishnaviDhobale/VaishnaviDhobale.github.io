@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import "iframe-resizer/js/iframeResizer.contentWindow";
 import { MdDownload } from "react-icons/md";
 import MyResume from "../files/Vaishnavi-Dhobale-Resume.pdf"

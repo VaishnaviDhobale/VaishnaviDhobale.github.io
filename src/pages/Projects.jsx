@@ -88,9 +88,10 @@ export default function Projects() {
           return (
             <Box
               boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
-              w="90%"
+              w="95%"
               p="20px"
               className="project-card"
+              margin={"auto"}
             >
               <Text
                 fontWeight={"Bold"}

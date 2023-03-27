@@ -37,7 +37,7 @@ export default function About() {
         <Box textAlign={"left"} margin = "auto" width = {{
           base : "90%",
           sm : "85%",
-          md : "95%"
+          md : "85%"
         }}>
           <Text id = "user-detail-intro">
             Hi Everyone, My name is{" "}
