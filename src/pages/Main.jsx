@@ -5,7 +5,7 @@ import About from "./About"
 import Navbar from "./Navbar";
 import Skills from "./Skills";
 import Contact from "./Contact";
-import Resume from "./Resume";
+// import Resume from "./Resume";
 import Github from "./Github"
 import Education from "./Education";
 
@@ -18,10 +18,12 @@ export default function Main() {
       </Box>
 
       <Home />
+      <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
+
       {/* <hr style={{marginTop : "50px" , marginBottom : "40px"}} /> */}
 
-      <Resume />
-      <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
+      {/* <Resume />
+      <hr style={{marginTop : "50px" , marginBottom : "40px"}} /> */}
 
 
       <About />

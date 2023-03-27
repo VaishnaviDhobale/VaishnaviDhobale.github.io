@@ -35,9 +35,9 @@ export default function About() {
           <Img margin={"auto"} src={Pic} borderRadius="50%" width={"150px"} className = "home-img"></Img>
         </Box>
         <Box textAlign={"left"} margin = "auto" width = {{
-          base : "90%",
-          sm : "85%",
-          md : "85%"
+          base : "80%",
+          sm : "80%",
+          md : "95%"
         }}>
           <Text id = "user-detail-intro">
             Hi Everyone, My name is{" "}

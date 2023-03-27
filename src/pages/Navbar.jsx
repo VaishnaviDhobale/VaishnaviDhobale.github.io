@@ -42,11 +42,13 @@ export default function Navbar() {
         mr="300px"
         width= {show ? "200px" : "50px"}
         backgroundColor={"white"}
+        // position="sticky" top="0px" left="0px" zIndex={1}
       >
-        <IconContext.Provider value={{ size: 40 }}>
+        <IconContext.Provider value={{ size: 40 }} >
           <MdDehaze
             style={{ backgroundColor: show ? "teal" : "#f4f4f4", padding: "5px" }}
             onClick={() => setShow((prev) => !prev)}
+
           />
         </IconContext.Provider>
       </Box>
@@ -96,6 +98,7 @@ export default function Navbar() {
             </Link>
           );
         })}
+        <a style={navStyle} className= "nav-link resume" target = "blank" href="https://drive.google.com/file/d/1aqnygVFoSqF6V8uCOCFwuNbfPNQwyw_-/view?usp=sharing">Resume</a>
       </Box>
     </>
   );
