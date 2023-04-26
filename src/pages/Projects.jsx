@@ -33,7 +33,7 @@ export default function Projects() {
       desc: "EngageBay is an integrated marketing, sales, support and CRM solution designed to help small to midsize.",
       tech_stack: techArr,
       gitHub: "https://github.com/VaishnaviDhobale/wakeful-bushes-4379",
-      deploy: "https://step-up13.netlify.app/",
+      deploy: "https://vaishnavidhobale.github.io/step-up/",
       type: "COLLABORATIVE",
     },
     {
