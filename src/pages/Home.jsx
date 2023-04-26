@@ -131,9 +131,15 @@ export default function Home() {
           </Text>
         </Box>
 
+
+        {/* <li id="resume-button-1">
+                        <a class="nav-link resume" id="resume-link-1" href='Vivek-Sangode-Resume.pdf'
+                            download="Vivek-Sangode-Resume">RESUME</a>
+                    </li> */}
+
         {/* Resume  */}
         <Box display={"flex"} justifyContent = "center">
-          <Box mt="30px" mr={"10px"}>
+          {/* <Box mt="30px" mr={"10px"} id="resume-button-1">
             <a
               href="https://drive.google.com/file/d/1L8rsoQnuVyGMa31PXjTBClH5SnMDJ23m/view?usp=sharing"
               target="blank"
@@ -145,20 +151,20 @@ export default function Home() {
                 backgroundColor: "teal",
                 borderRadius: "5px",
               }}
-              id="resume-button-1"
+              id="resume-link-1"
             >
               Resume
             </a>
-          </Box>
+          </Box> */}
           <Box
             backgroundColor="teal"
             mt="20px"
             p={"9px 15px"}
             borderRadius="5px"
             cursor={"pointer"}
-            id="resume-button-2"
+            id="resume-button-1"
           >
-            <a href={MyResume} download = "Vaishnavi-Dhobale-Resume"><MdDownload color="white" size={"30px"} /></a>
+            <a href={MyResume} id="resume-link-1"  download = "Vaishnavi-Dhobale-Resume"><MdDownload color="white" size={"30px"} /></a>
           </Box>
         </Box>
       </Box>
