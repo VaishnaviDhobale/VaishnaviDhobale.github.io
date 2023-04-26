@@ -162,9 +162,9 @@ export default function Home() {
             p={"9px 15px"}
             borderRadius="5px"
             cursor={"pointer"}
-            id="resume-button-1"
+            id="resume-button-2"
           >
-            <a href={MyResume} id="resume-link-1"  download = "Vaishnavi-Dhobale-Resume"><MdDownload color="white" size={"30px"} /></a>
+            <a href={MyResume} id="resume-link-2"  download = "Vaishnavi-Dhobale-Resume">Resume<MdDownload color="white" size={"30px"} /></a>
           </Box>
         </Box>
       </Box>
