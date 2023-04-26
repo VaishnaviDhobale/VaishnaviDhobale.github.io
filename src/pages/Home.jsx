@@ -162,8 +162,7 @@ export default function Home() {
           p={"9px 15px"}
           borderRadius="5px"
           cursor={"pointer"}
-          // id="resume-button-2"
-          className="nav-menu"
+          id="resume-button-2"
         > 
          <a
             style={{ color: "white", fontSize: "20px" }}
