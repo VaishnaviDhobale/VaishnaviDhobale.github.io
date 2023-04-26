@@ -51,7 +51,7 @@ export default function Skills() {
   ];
 
   return (
-    <Box id="skills" w="80%" margin={"auto"} textAlign="center">
+    <Box id="skills" w="80%" margin={"auto"} textAlign="center" pt={"100px"}>
       <Text fontWeight={"600"} fontSize="40px" pb={"30px"}>
         Technical Skills & Tools
       </Text>

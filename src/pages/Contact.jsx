@@ -6,12 +6,13 @@ import { AiFillPhone } from "react-icons/ai";
 
 export default function Contact() {
   return (
-    <Box id="contact" w={{
+    <Box id="contact" pt={"100px"} w={{
       base : "100%",
       sm : "100%",
       md : "90%",
       lg: "85%"
-    }} margin={"auto"} textAlign="center">
+    }
+    } margin={"auto"} textAlign="center">
       <Text fontWeight={"600"} fontSize="40px" pb={"30px"}>
         Contact
       </Text>

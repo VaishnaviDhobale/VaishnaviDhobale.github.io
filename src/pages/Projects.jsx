@@ -69,7 +69,7 @@ export default function Projects() {
     },
   ];
   return (
-    <Box id={"projects"} w="80%" margin={"auto"} textAlign="center">
+    <Box id={"projects"} w="80%" margin={"auto"} textAlign="center" pt={"100px"}>
       <Text fontWeight={"600"} fontSize="40px" pb={"30px"}>
         Projects
       </Text>

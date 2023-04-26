@@ -28,7 +28,7 @@ export default function Education() {
     },
   ];
   return (
-    <Box id="education" w="80%" margin={"auto"} textAlign="center">
+    <Box id="education" w="80%" margin={"auto"} textAlign="center" pt={"100px"}>
       <Text fontWeight={"600"} fontSize="40px" pb={"30px"}>
         Education
       </Text>
@@ -37,7 +37,7 @@ export default function Education() {
         sm : "repeat(1,1fr)",
         md : "repeat(2,1fr)",
         lg : "repeat(3,1fr)",
-      }} gap="20px">
+      }} gap="20px" position={"relative"}>
         {EduArr.map((el) => {
           return (
             <Box
@@ -45,6 +45,7 @@ export default function Education() {
               w="100%"
               textAlign={"left"}
               p="20px"
+              h = "250px"
             >
               <Text fontWeight={"600"} color="teal" fontSize={"20px"}>
                 {el.title}
@@ -93,7 +94,11 @@ export default function Education() {
                 textAlign="center"
                 p=" 10px 20px"
                 mt="20px"
+                ml = "80px"
                 borderRadius={"20px"}
+                position = "absolute"
+                bottom={"15px"}
+                // left = "30px"
               >
                 <a href={el.url} style={{fontSize : "17px"}}>
                   {el.text}

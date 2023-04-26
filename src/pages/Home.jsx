@@ -5,7 +5,7 @@ import { AiFillMail } from "react-icons/ai";
 import { AiFillPhone } from "react-icons/ai";
 import { useContext, useState } from "react";
 import { MdDownload } from "react-icons/md";
-import MyResume from "../files/Vaishnavi-Dhobale-Resume.pdf"
+import MyResume from "../files/Vaishnavi-Dhobale-Resume.pdf";
 import { Theme } from "../ThemeContest/ThemeProvider";
 
 export default function Home() {
@@ -14,8 +14,7 @@ export default function Home() {
   let [linkedin, setLinkedin] = useState(false);
   let [email, setEmail] = useState(false);
 
-  let {theme}= useContext(Theme);
-
+  let { theme } = useContext(Theme);
 
   let iconStyle = {
     borderBottom: "3px solid red",
@@ -29,117 +28,118 @@ export default function Home() {
     margin: "auto",
     padding: "10px",
   };
-  return <Box
-        id="home"
-        w={{
-          base : "80%",
-          sm : "90%",
-          md : "80%",
-          lg : "700px"
-        }}
-        m= "auto"
-        ml = {{
-          base : "50px",
-          sm :  "50px" ,
-          md : "auto"
-        }}
+  return (
+    <Box
+      id="home"
+      w={{
+        base: "80%",
+        sm: "90%",
+        md: "80%",
+        lg: "700px",
+      }}
+      m="auto"
+      ml={{
+        base: "50px",
+        sm: "50px",
+        md: "auto",
+      }}
+      display={"flex"}
+      flexDirection="column"
+      alignItems="center"
+      // border = "1px solid red"
+    >
+      <Box>
+        <Text fontWeight={"600"} fontSize="43px" m={0}>
+          Welcome, This is{" "}
+          <span id="user-detail-name" style={{ color: "teal" }}>
+            Vaishnavi Dhobale
+          </span>{" "}
+          <br />
+        </Text>
+        <Text style={{ fontSize: "25px" }} m="20px 0">
+          Full Stack Web Developer (MERN)
+        </Text>
+        <Text fontWeight={"400"} id="user-detail-intro">
+          A passionate aspiring Full Stack Web Developer Skilled in MERN stack.
+          Developing websites using JavaScript, React, Node, Chakra-UI, MongoDB
+          and having more than 1000+ hours of coding experience in above
+          mentioned skills. Looking forward to opportunities that can bring
+          challenges and learning to leverage.
+        </Text>
+      </Box>
 
+      <Box
         display={"flex"}
-        flexDirection="column"
-        alignItems="center"
-        // border = "1px solid red"
+        w="200px"
+        m={"auto"}
+        justifyContent={"space-around"}
+        mt={"50px"}
       >
-        <Box>
-          <Text fontWeight={"600"} fontSize="43px" m={0}>
-            Welcome, This is{" "}
-            <span id = "user-detail-name" style={{ color: "teal" }}>Vaishnavi Dhobale</span> <br />
-          </Text>
-          <Text style={{ fontSize: "25px" }} m="20px 0">
-            Full Stack Web Developer (MERN)
-          </Text>
-          <Text fontWeight={"400"} id = "user-detail-intro">
-            A passionate aspiring Full Stack Web Developer Skilled in MERN
-            stack. Developing websites using JavaScript, React, Node, Chakra-UI,
-            MongoDB and having more than 1000+ hours of coding experience in
-            above mentioned skills. Looking forward to opportunities that can
-            bring challenges and learning to leverage.
-          </Text>
-        </Box>
-
-        <Box
-          display={"flex"}
-          w="200px"
-          m={"auto"}
-          justifyContent={"space-around"}
-          mt={"50px"}
+        {" "}
+        <a
+          style={{ color: "black" }}
+          href={"https://github.com/VaishnaviDhobale"}
+          target="blank"
+          id="contact-github"
         >
-          {" "}
-          <a
-            style={{ color: "black" }}
-            href={"https://github.com/VaishnaviDhobale"}
-            target="blank"
-            id="contact-github"
-          >
-            <AiFillGithub
-              size={"30"}
-              color={theme ? "black" : "white"}
-              style={github ? iconStyle : null}
-              onMouseEnter={() => setGithub(true)}
-              onMouseLeave={() => setGithub(false)}
-            />
-          </a>
-          <a
-            style={{ color: "black" }}
-            href={"https://www.linkedin.com/in/vaishnavi-dhobale-89243022b/"}
-            target="blank"
-            id="contact-linkedin"
-          >
-            <AiFillLinkedin
-              style={linkedin ? iconStyle : null}
-              size={"30"}
-              color={theme ? "black" : "white"}
-              onMouseEnter={() => setLinkedin(true)}
-              onMouseLeave={() => setLinkedin(false)}
-            />
-          </a>
-          <a
-            style={{ color: "black" }}
-            href={"https://mail.google.com/mail/u/0/#inbox"}
-            target="blank"
-            id="contact-email"
-          >
-            <AiFillMail
-              style={email ? iconStyle : null}
-              size={"30"}
-              color={theme ? "black" : "white"}
-              onMouseEnter={() => setEmail(true)}
-              onMouseLeave={() => setEmail(false)}
-            />
-          </a>
-          <AiFillPhone id="contact-phone" style={phone ? iconStyle : null} size={"30"} />
-        </Box>
-
-        {/* phone  */}
-        <Box
-          p={"20px"}
-          // border="2px solid red"
-          width="300px"
-          m="auto"
+          <AiFillGithub
+            size={"30"}
+            color={theme ? "black" : "white"}
+            style={github ? iconStyle : null}
+            onMouseEnter={() => setGithub(true)}
+            onMouseLeave={() => setGithub(false)}
+          />
+        </a>
+        <a
+          style={{ color: "black" }}
+          href={"https://www.linkedin.com/in/vaishnavi-dhobale-89243022b/"}
+          target="blank"
+          id="contact-linkedin"
         >
-          <Text style={phone ? phoneStyle : null}>
-            {phone ? "+91 7499718585" : null}
-          </Text>
-        </Box>
+          <AiFillLinkedin
+            style={linkedin ? iconStyle : null}
+            size={"30"}
+            color={theme ? "black" : "white"}
+            onMouseEnter={() => setLinkedin(true)}
+            onMouseLeave={() => setLinkedin(false)}
+          />
+        </a>
+        <a
+          style={{ color: "black" }}
+          href={"https://mail.google.com/mail/u/0/#inbox"}
+          target="blank"
+          id="contact-email"
+        >
+          <AiFillMail
+            style={email ? iconStyle : null}
+            size={"30"}
+            color={theme ? "black" : "white"}
+            onMouseEnter={() => setEmail(true)}
+            onMouseLeave={() => setEmail(false)}
+          />
+        </a>
+        <AiFillPhone
+          id="contact-phone"
+          style={phone ? iconStyle : null}
+          size={"30"}
+        />
+      </Box>
 
+      {/* phone  */}
+      <Box
+        p={"20px"}
+        // border="2px solid red"
+        width="300px"
+        m="auto"
+      >
+        <Text style={phone ? phoneStyle : null}>
+          {phone ? "+91 7499718585" : null}
+        </Text>
+      </Box>
 
-        {/* <li id="resume-button-1">
-                        <a class="nav-link resume" id="resume-link-1" href='Vivek-Sangode-Resume.pdf'
-                            download="Vivek-Sangode-Resume">RESUME</a>
-                    </li> */}
-
-        {/* Resume  */}
-        <Box display={"flex"} justifyContent = "center">
-          {/* <Box mt="30px" mr={"10px"} id="resume-button-1">
+      {/* Resume  */}
+      <Box display={"flex"} justifyContent="center">
+        {/* <Box mt="30px" mr={"10px"} id="resume-button-1">
             <a
               href="https://drive.google.com/file/d/1L8rsoQnuVyGMa31PXjTBClH5SnMDJ23m/view?usp=sharing"
               target="blank"
@@ -156,16 +156,25 @@ export default function Home() {
               Resume
             </a>
           </Box> */}
-          <Box
-            backgroundColor="teal"
-            mt="20px"
-            p={"9px 15px"}
-            borderRadius="5px"
-            cursor={"pointer"}
-            id="resume-button-2"
+       <Box
+          backgroundColor="teal"
+          mt="20px"
+          p={"9px 15px"}
+          borderRadius="5px"
+          cursor={"pointer"}
+          id="resume-button-2"
+        > 
+         <a
+            style={{ color: "white", fontSize: "20px" }}
+            href={MyResume}
+            id="resume-link-2"
+            download="Vaishnavi-Dhobale-Resume"
+            target="blank"
           >
-            <a  style = {{color:"white", fontSize : "20px"}} href={MyResume} id="resume-link-2"  download = "Vaishnavi-Dhobale-Resume" target="blank">Resume</a>
-          </Box>
+            Resume
+          </a> 
         </Box>
       </Box>
+    </Box>
+  );
 }

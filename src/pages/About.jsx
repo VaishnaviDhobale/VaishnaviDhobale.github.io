@@ -24,6 +24,7 @@ export default function About() {
       className="about section"
       zIndex={-1}
       textAlign="center"
+      pt={"100px"}
     >
       <Text fontWeight={"600"} fontSize="40px" pb={"30px"}>
         About Me
@@ -57,7 +58,8 @@ export default function About() {
             </span>
             . Then I joined full stack web development course by{" "}
             <span style={{ color: "teal" }}>Masai School</span> a military type
-            coding school Where I learn HTML, CSS JavaScript.
+            coding school. Where I learned HTML, CSS, JavaScript, React, MongoDB, Node, Express etc. 
+            <span style={{ color: "teal" }}> Looking forward to work on real world project.</span>
           </Text>
         </Box>
       </Box>

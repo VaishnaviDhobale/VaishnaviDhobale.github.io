@@ -3,7 +3,7 @@ import GitHubCalendar from "react-github-calendar";
 
 export default function Github() {
   return (
-    <Box w="80%" margin={"auto"} textAlign="center" id = "github">
+    <Box w="80%" margin={"auto"} textAlign="center" id = "github" pt={"100px"}>
       <Text fontWeight={"600"} fontSize="40px" pb={"30px"}>
         GitHub
       </Text>

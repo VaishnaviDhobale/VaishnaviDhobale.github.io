@@ -21,7 +21,7 @@ export default function Main() {
       </Box>
 
       <Home />
-      <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
+      {/* <hr style={{marginTop : "50px" , marginBottom : "40px"}} /> */}
 
       {/* <hr style={{marginTop : "50px" , marginBottom : "40px"}} /> */}
 
@@ -30,20 +30,20 @@ export default function Main() {
 
 
       <About />
-      <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
+      {/* <hr style={{marginTop : "50px" , marginBottom : "40px"}} /> */}
 
       <Education />
-      <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
+      {/* <hr style={{marginTop : "50px" , marginBottom : "40px"}} /> */}
 
       <Skills />
-      <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
+      {/* <hr style={{marginTop : "50px" , marginBottom : "40px"}} /> */}
 
 
       <Projects />
-      <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
+      {/* <hr style={{marginTop : "50px" , marginBottom : "40px"}} /> */}
 
       <Github />
-      <hr style={{marginTop : "50px" , marginBottom : "40px"}} />
+      {/* <hr style={{marginTop : "50px" , marginBottom : "40px"}} /> */}
 
       <Contact />
 
