@@ -109,7 +109,7 @@ export default function Navbar() {
             </Link>
           );
         })}
-        <a style={navStyle} className= "nav-link resume" target = "blank" href="https://drive.google.com/file/d/1aqnygVFoSqF6V8uCOCFwuNbfPNQwyw_-/view?usp=sharing">Resume</a>
+        <a style={navStyle}  id="resume-link-1" className= "nav-link resume" target = "blank" href="https://drive.google.com/file/d/1aqnygVFoSqF6V8uCOCFwuNbfPNQwyw_-/view?usp=sharing">Resume</a>
       </Box>
      <Box  width = "100%">
      <Button onClick = {()=>{
