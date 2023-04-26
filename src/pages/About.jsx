@@ -57,7 +57,7 @@ export default function About() {
             </span>
             . Then I joined full stack web development course by{" "}
             <span style={{ color: "teal" }}>Masai School</span> a military type
-            coding school.
+            coding school Where I learn HTML, CSS JavaScript.
           </Text>
         </Box>
       </Box>
