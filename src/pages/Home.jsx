@@ -164,7 +164,7 @@ export default function Home() {
             cursor={"pointer"}
             id="resume-button-2"
           >
-            <a href={MyResume} id="resume-link-2"  download = "Vaishnavi-Dhobale-Resume">Resume<MdDownload color="white" size={"30px"} /></a>
+            <a  style = {{color:"white", fontSize : "20px"}} href={MyResume} id="resume-link-2"  download = "Vaishnavi-Dhobale-Resume" target="blank">Resume</a>
           </Box>
         </Box>
       </Box>
