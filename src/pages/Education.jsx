@@ -37,7 +37,7 @@ export default function Education() {
         sm : "repeat(1,1fr)",
         md : "repeat(2,1fr)",
         lg : "repeat(3,1fr)",
-      }} gap="20px" position={"relative"}>
+      }} gap="20px">
         {EduArr.map((el) => {
           return (
             <Box
@@ -45,7 +45,8 @@ export default function Education() {
               w="100%"
               textAlign={"left"}
               p="20px"
-              h = "250px"
+              h = "250px" 
+              position={"relative"}
             >
               <Text fontWeight={"600"} color="teal" fontSize={"20px"}>
                 {el.title}
