@@ -5,14 +5,19 @@ import { MdDehaze } from "react-icons/md";
 import { useState } from "react";
 import { useContext } from "react";
 import { Theme } from "../ThemeContest/ThemeProvider";
-import {IoMdMoon} from "react-icons/io"
+import {IoMdMoon} from "react-icons/io";
+import MyResume from "../files/Vaishnavi-Dhobale-Resume.pdf";
 
 
 export default function Navbar() {
   let [show, setShow] = useState(false);
 
   let {theme,setTheme}= useContext(Theme);
-  console.log(theme)
+  console.log(theme);
+
+  const openLink = (url) => {
+    window.open(url);
+  };
 
   let navArr = [
     { to: "#home", className: "nav-link home", text: "Home" },
@@ -109,7 +114,33 @@ export default function Navbar() {
             </Link>
           );
         })}
-        <a style={navStyle}  id="resume-link-1" className= "nav-link resume" target = "blank" href="https://drive.google.com/file/d/1aqnygVFoSqF6V8uCOCFwuNbfPNQwyw_-/view?usp=sharing">Resume</a>
+
+        {/* resume in navbar  */}
+        <Box>
+          <a
+            href= {MyResume}
+            className="nav-link resume"
+            id="resume-link-1"
+            download="Vaishnavi-Dhobale-Resume"
+            target="blank"
+            style = {{fontSize : "19px"}}
+
+          >
+            {/* https://drive.google.com/file/d/1ZOPd46dSr9jiZQDvYvpGzpQ17mBkuqIU/view?usp=share_link */}
+            <Box
+              onClick={() =>
+                openLink(
+                  "https://drive.google.com/file/d/1aqnygVFoSqF6V8uCOCFwuNbfPNQwyw_-/view?usp=sharing"
+                )
+              }
+              className="navbar-resume"
+              id="resume-button-1"
+              mr = "30px"
+            >
+              Resume
+            </Box>
+          </a>
+        </Box>
       </Box>
      <Box  width = "100%">
      <Button onClick = {()=>{

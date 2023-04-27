@@ -4,7 +4,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillMail } from "react-icons/ai";
 import { AiFillPhone } from "react-icons/ai";
 import { useContext, useState } from "react";
-import { MdDownload } from "react-icons/md";
+// import { MdDownload } from "react-icons/md";
 import MyResume from "../files/Vaishnavi-Dhobale-Resume.pdf";
 import { Theme } from "../ThemeContest/ThemeProvider";
 
@@ -15,6 +15,10 @@ export default function Home() {
   let [email, setEmail] = useState(false);
 
   let { theme } = useContext(Theme);
+
+  const openLink = (url) => {
+    window.open(url);
+  };
 
   let iconStyle = {
     borderBottom: "3px solid red",
@@ -156,7 +160,8 @@ export default function Home() {
               Resume
             </a>
           </Box> */}
-       <Box
+
+        {/* <Box
           backgroundColor="teal"
           mt="20px"
           p={"9px 15px"}
@@ -173,6 +178,36 @@ export default function Home() {
           >
             Resume
           </a> 
+        </Box> */}
+
+        <Box
+        backgroundColor="teal"
+        mt="20px"
+        p={"9px 15px"}
+        borderRadius="5px"
+        cursor={"pointer"}
+        >
+          <a
+            href= {MyResume}
+            className="nav-link resume"
+            id="resume-link-2"
+            download="Vaishnavi-Dhobale-Resume"
+            target="blank"
+          >
+            {/* https://drive.google.com/file/d/1ZOPd46dSr9jiZQDvYvpGzpQ17mBkuqIU/view?usp=share_link */}
+            <div
+              onClick={() =>
+                openLink(
+                  "https://drive.google.com/file/d/1aqnygVFoSqF6V8uCOCFwuNbfPNQwyw_-/view?usp=sharing"
+                )
+              }
+              className="navbar-resume"
+              id="resume-button-2"
+              style = {{fontSize : "29px"}}
+            >
+              Resume
+            </div>
+          </a>
         </Box>
       </Box>
     </Box>
