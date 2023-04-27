@@ -141,46 +141,11 @@ export default function Home() {
         </Text>
       </Box>
 
+
+
       {/* Resume  */}
       <Box display={"flex"} justifyContent="center">
-        {/* <Box mt="30px" mr={"10px"} id="resume-button-1">
-            <a
-              href="https://drive.google.com/file/d/1L8rsoQnuVyGMa31PXjTBClH5SnMDJ23m/view?usp=sharing"
-              target="blank"
-              style={{
-                textDecoration: "none",
-                color: "white",
-                padding: "10px 15px",
-                fontSize: "20px",
-                backgroundColor: "teal",
-                borderRadius: "5px",
-              }}
-              id="resume-link-1"
-            >
-              Resume
-            </a>
-          </Box> */}
-
-        {/* <Box
-          backgroundColor="teal"
-          mt="20px"
-          p={"9px 15px"}
-          borderRadius="5px"
-          cursor={"pointer"}
-          id="resume-button-2"
-        > 
-         <a
-            style={{ color: "white", fontSize: "20px" }}
-            href={MyResume}
-            id="resume-link-2"
-            download="Vaishnavi-Dhobale-Resume"
-            target="blank"
-          >
-            Resume
-          </a> 
-        </Box> */}
-
-        <Box
+      <Box
         backgroundColor="teal"
         mt="20px"
         p={"9px 15px"}
@@ -194,19 +159,18 @@ export default function Home() {
             download="Vaishnavi-Dhobale-Resume"
             target="blank"
           >
-            {/* https://drive.google.com/file/d/1ZOPd46dSr9jiZQDvYvpGzpQ17mBkuqIU/view?usp=share_link */}
-            <div
+            <Box
               onClick={() =>
                 openLink(
                   "https://drive.google.com/file/d/1aqnygVFoSqF6V8uCOCFwuNbfPNQwyw_-/view?usp=sharing"
                 )
               }
               className="navbar-resume"
-              id="resume-button-2"
               style = {{fontSize : "29px"}}
+              id="resume-button-2"
             >
               Resume
-            </div>
+            </Box>
           </a>
         </Box>
       </Box>

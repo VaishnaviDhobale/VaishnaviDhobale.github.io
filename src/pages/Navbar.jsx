@@ -126,7 +126,6 @@ export default function Navbar() {
             style = {{fontSize : "19px"}}
 
           >
-            {/* https://drive.google.com/file/d/1ZOPd46dSr9jiZQDvYvpGzpQ17mBkuqIU/view?usp=share_link */}
             <Box
               onClick={() =>
                 openLink(
@@ -142,6 +141,7 @@ export default function Navbar() {
           </a>
         </Box>
       </Box>
+      
      <Box  width = "100%">
      <Button onClick = {()=>{
         setTheme((prev)=> !prev)
