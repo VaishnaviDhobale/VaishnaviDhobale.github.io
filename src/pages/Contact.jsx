@@ -87,7 +87,7 @@ export default function Contact() {
             fontWeight={"600"}
             fontSize="20px"
           >
-            7499718585
+            +91 7499718585
           </Text>
         </Box>
       </Box>

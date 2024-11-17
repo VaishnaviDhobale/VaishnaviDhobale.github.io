@@ -25,6 +25,7 @@ export default function Navbar() {
     { to: "#education", className: "nav-link education", text: "Education" },
     { to: "#skills", className: "nav-link skills", text: "Skills" },
     { to: "#projects", className: "nav-link projects", text: "Projects" },
+    { to: "#experience", className: "nav-link projects", text: "Experience" },
     { to: "#github", className: "", text: "github" },
     { to: "#contact", className: "nav-link contact", text: "Contact" },
   ];
@@ -142,6 +143,7 @@ export default function Navbar() {
         </Box>
       </Box>
       
+      {/* Theam change btn  */}
      <Box  width = "100%">
      <Button onClick = {()=>{
         setTheme((prev)=> !prev)
@@ -157,7 +159,7 @@ export default function Navbar() {
         right = {{
           base : "0px",
           sm : "0px",
-          md : "750px",
+          md : "1200px",
           lg : "none"
         }}
         backgroundColor = {"teal"}

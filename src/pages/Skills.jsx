@@ -14,6 +14,7 @@ import { BsGithub } from "react-icons/bs";
 import { SiNetlify } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import { SiPhp } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
 
 export default function Skills() {
 
@@ -45,6 +46,7 @@ export default function Skills() {
     { skill: "PHP", logo: <SiPhp style={iconStyle} size="60px" /> },
     { skill: "C++", logo: <TbBrandCpp style={iconStyle} size="60px" /> },
     { skill: "Chakra-UI", logo: <SiChakraui style={iconStyle} size="60px" /> },
+    { skill: "Tailwind", logo: <SiTailwindcss style={iconStyle} size="60px" /> },
     { skill: "Github", logo: <BsGithub style={iconStyle} size="60px" /> },
     { skill: "Netlify", logo: <SiNetlify style={iconStyle} size="60px" /> },
     { skill: "Vscode", logo: <TbBrandVscode style={iconStyle} size="60px" /> },

@@ -2,22 +2,8 @@ import { Box, Text, textDecoration } from "@chakra-ui/react";
 
 export default function Education() {
   const EduArr = [
-    {
-      title: "SSC",
-      clgName: "Late, Raghunath Krushnaji patil Autade vidyalaya malewadi.",
-      place: "Malewadi, Shrirampur, Maharashtra",
-      duration: "June-2017 to June-2018",
-      url: "",
-      // text: "See Result",
-    },
-    {
-      title: "Computer Engineering (Diploma)",
-      clgName: "Ashok Polytechnic.",
-      place: "Ashoknagar, Shrirampur, Maharashtra",
-      duration: "August-2018 to August-2021",
-      url: "",
-      // text: "See Result",
-    },
+   
+   
     {
       title: "Computer Engineering (BE)",
       clgName: "Sahyadri valley college of engineering",
@@ -28,12 +14,29 @@ export default function Education() {
     },
     {
       title: "Full Stack Web Development (FullTime)",
-      clgName: "Masai school.",
+      clgName: "Masai.",
       place: "Bengaluru, Karnataka",
       duration: "August-2022 to May-2023",
       url: "",
       text: "See Certificate",
     },
+    {
+      title: "Computer Engineering (Diploma)",
+      clgName: "Ashok Polytechnic.",
+      place: "Ashoknagar, Shrirampur, Maharashtra",
+      duration: "August-2018 to August-2021",
+      url: "",
+      // text: "See Result",
+    },
+    {
+      title: "SSC",
+      clgName: "Late, Raghunath Krushnaji patil Autade vidyalaya malewadi.",
+      place: "Malewadi, Shrirampur, Maharashtra",
+      duration: "June-2017 to June-2018",
+      url: "",
+      // text: "See Result",
+    },
+    
   ];
   return (
     <Box id="education" w="80%" margin={"auto"} textAlign="center" pt={"100px"}>

@@ -7,11 +7,18 @@ import { SiChakraui } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 
-import Proj1 from "../images/proj-1.png";
-import Proj2 from "../images/proj-2.png";
+import EngageBay from "../images/proj-1.png";
+import LoseIt from "../images/proj-2.png";
 import Proj3 from "../images/proj-3.png";
-import Proj4 from "../images/proj-4.png";
-import Proj5 from "../images/Proj5.png";
+import Amazon from "../images/proj-4.png";
+import DefencePost from "../images/Proj5.png";
+import RCTravels from "../images/RCTravels.png";
+import TheBookBridge from "../images/TheBookBridge.png"
+import { SiPhp } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+
+
 
 export default function Projects() {
   const techArr = [
@@ -32,63 +39,79 @@ export default function Projects() {
     <SiMongodb color="teal" size="30px" />,
   ];
 
+  const Rc_tech = [
+    <TbBrandReact color="teal" size="30px" />,
+    <SiTailwindcss color="teal" size="30px"  />,
+    <SiPhp color="teal" size="30px" />,
+    <SiMysql color="teal" size="30px" />
+  ]
+
+  const TheBookBridgeTech = [
+    <IoLogoJavascript color="teal" size="30px" />,
+    <TbBrandReact color="teal" size="30px" />,
+    <SiTailwindcss color="teal" size="30px"  />,
+    <SiExpress color="teal" size="30px" />,
+    <SiMongodb color="teal" size="30px" />,
+  ]
+
   const achorStyle = {
     padding: "10px 20px",
     backgroundColor: "teal",
     color: "white",
     fontWeight: "600",
   };
+
+
   const projectsArr = [
     {
-      img: Proj5,
+      img: DefencePost,
       title: "Defence Post",
       desc: "DefencePost delivers unparalleled study materials, offering the most comprehensive and effective notes to empower CDS students on their path to success.",
       tech_stack: fullstackTech,
-      gitHub: "https://github.com/VaishnaviDhobale/NewDefencePost",
-      deploy: "https://defencepost.in/",
+      gitHub: "https://github.com/VaishnaviDhobale/DefencePost-User",
+      deploy: "https://defence-post-user.vercel.app/",
       type: "INDIVIDUAL",
     },
     {
-      img: Proj4,
-      title: "Amazon Website Clone",
-      desc: "Amazon is the world's largest online retailer and a prominent cloud service provider.",
+      img: RCTravels,
+      title: "RC Travels",
+      desc: "Developed a responsive travel agency website, RC Travels, using React, PHP, and MySQL, showcasing travel packages, features, and customer feedback to provide a user-friendly experience for exploring travel solutions",
+      tech_stack: Rc_tech,
+      gitHub: "https://github.com/omkar-pd/RC-Travels",
+      deploy: "https://rc-travels.com/",
+      type: "COLLABORATIVE",
+    },
+    {
+      img: TheBookBridge,
+      title: "The Book Bridge",
+      desc: "Developed a full-stack MERN app where authors manage and publish books, and readers explore, filter, and review titles. The platform offers dashboards, search, and sorting, creating an interactive space for book enthusiasts.",
+      tech_stack: TheBookBridgeTech,
+      gitHub: "https://github.com/VaishnaviDhobale/TheBookBridge",
+      deploy: "https://66b49440be40e5d3e40156bf--jazzy-smakager-22fd33.netlify.app/?page=1&pageLimit=10&sortOrder=asc",
+      type: "INDIVIDUAL",
+    },
+    {
+      img: Amazon,
+      title: "Buyify",
+      desc: "Developed an Amazon clone using the MERN stack, with features like product browsing, search, and filtering for an e-commerce browsing experience.",
       tech_stack: fullstackTech,
       gitHub: "https://github.com/aniketgarole/plum-push-2647",
       deploy: "https://peaceful-liger-051912.netlify.app/",
       type: "COLLABORATIVE",
     },
+    
     {
-      img: Proj1,
-      title: "The Book Bridge",
-      desc: "EngageBay is an integrated marketing, sales, support and CRM solution designed to help small to midsize.",
-      tech_stack: techArr,
-      gitHub: "https://github.com/VaishnaviDhobale/wakeful-bushes-4379",
-      deploy: "https://vaishnavidhobale.github.io/step-up/",
-      type: "COLLABORATIVE",
-    },
-    {
-      img: Proj2,
+      img: LoseIt,
       title: "Lose It! Website Clone",
       desc: "Lose It! helps the User to adjust their weight according to user height, & helps the user to stay fit and healthy.",
       tech_stack: techArr,
       gitHub: "https://github.com/VaishnaviDhobale/short-whip-5406",
       deploy: "https://spontaneous-cuchufli-e48ffa.netlify.app/",
       type: "INDIVIDUAL",
-    },
-
-    {
-      img: Proj3,
-      title: "Myglamm Website Clone",
-      desc: "Myglamm provides all types of beauty products to the user.",
-      tech_stack: reactProjTech,
-      gitHub:
-        "https://github.com/VaishnaviDhobale/windy-picture-8509-/tree/main/cwproject",
-      deploy: "https://chipper-elf-94f061.netlify.app/",
-      type: "INDIVIDUAL",
-    },
-
-    
+    }    
   ];
+
+
   return (
     <Box
       id={"projects"}

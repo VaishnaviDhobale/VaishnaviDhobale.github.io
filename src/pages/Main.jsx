@@ -8,6 +8,7 @@ import Contact from "./Contact";
 // import Resume from "./Resume";
 import Github from "./Github"
 import Education from "./Education";
+import Experience from "./Experience";
 import { useContext } from "react";
 import { Theme } from "../ThemeContest/ThemeProvider";
 
@@ -41,6 +42,9 @@ export default function Main() {
 
       <Projects />
       {/* <hr style={{marginTop : "50px" , marginBottom : "40px"}} /> */}
+
+
+      <Experience />
 
       <Github />
       {/* <hr style={{marginTop : "50px" , marginBottom : "40px"}} /> */}
