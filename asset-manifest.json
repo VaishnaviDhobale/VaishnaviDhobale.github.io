@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ffe34ec7.css",
-    "main.js": "/static/js/main.5e69b6a0.js",
+    "main.js": "/static/js/main.b5cb95d7.js",
     "static/js/787.1f11dfe9.chunk.js": "/static/js/787.1f11dfe9.chunk.js",
     "static/media/RCTravels.png": "/static/media/RCTravels.211cd606bc0c2fa5f0c9.png",
     "static/media/proj-4.png": "/static/media/proj-4.3deaee2bf481a24da481.png",
@@ -10,16 +10,17 @@
     "static/media/TheBookBridge.png": "/static/media/TheBookBridge.f24cf163380bcadc8343.png",
     "static/media/proj-1.png": "/static/media/proj-1.56137b27ebbe21315178.png",
     "static/media/Leeds4NeedsLogo.png": "/static/media/Leeds4NeedsLogo.9f63a6a0d3ce3f24d9c3.png",
+    "static/media/ArtifyAI.png": "/static/media/ArtifyAI.29d53dc3adde07b6b885.png",
     "static/media/Vaishnavi-Dhobale-Resume.pdf": "/static/media/Vaishnavi-Dhobale-Resume.bf1d104dfb7d538a6af5.pdf",
     "static/media/proj-2.png": "/static/media/proj-2.998430fa3c5e22a7004f.png",
     "static/media/fully final.png": "/static/media/fully final.f3a193e8fb0d758b9667.png",
     "index.html": "/index.html",
     "main.ffe34ec7.css.map": "/static/css/main.ffe34ec7.css.map",
-    "main.5e69b6a0.js.map": "/static/js/main.5e69b6a0.js.map",
+    "main.b5cb95d7.js.map": "/static/js/main.b5cb95d7.js.map",
     "787.1f11dfe9.chunk.js.map": "/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ffe34ec7.css",
-    "static/js/main.5e69b6a0.js"
+    "static/js/main.b5cb95d7.js"
   ]
 }
