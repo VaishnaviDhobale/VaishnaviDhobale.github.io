@@ -130,7 +130,7 @@ export default function Navbar() {
             <Box
               onClick={() =>
                 openLink(
-                  "https://drive.google.com/file/d/1G6FYINHjgiVK0EmTnYDmX7fkx7GtdQpZ/view?usp=sharing"
+                  "https://drive.google.com/file/d/1QhvY5gMTdqGhlTsd5H-6pA2Dws_AuOmH/view?usp=sharing"
                 )
               }
               className="navbar-resume"

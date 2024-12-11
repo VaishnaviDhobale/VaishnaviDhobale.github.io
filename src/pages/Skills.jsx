@@ -15,6 +15,8 @@ import { SiNetlify } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import { SiPhp } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
+import { SiVercel } from "react-icons/si";
+
 
 export default function Skills() {
 
@@ -49,6 +51,7 @@ export default function Skills() {
     { skill: "Tailwind", logo: <SiTailwindcss style={iconStyle} size="60px" /> },
     { skill: "Github", logo: <BsGithub style={iconStyle} size="60px" /> },
     { skill: "Netlify", logo: <SiNetlify style={iconStyle} size="60px" /> },
+    { skill: "Vercel", logo: <SiVercel style={iconStyle} size="60px" /> },
     { skill: "Vscode", logo: <TbBrandVscode style={iconStyle} size="60px" /> },
   ];
 

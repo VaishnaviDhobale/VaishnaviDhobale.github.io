@@ -6,7 +6,14 @@ import { TbBrandReact } from "react-icons/tb";
 import { SiChakraui } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
+import { BsGithub } from "react-icons/bs";
+import { SiVercel } from "react-icons/si";
+import { SiNetlify } from "react-icons/si";
 
+
+
+
+import ArtifyAI from "../images/ArtifyAI.png"
 import EngageBay from "../images/proj-1.png";
 import LoseIt from "../images/proj-2.png";
 import Proj3 from "../images/proj-3.png";
@@ -25,6 +32,8 @@ export default function Projects() {
     <IoLogoHtml5 color="teal" size="30px" />,
     <IoLogoCss3 color="teal" size="30px" />,
     <IoLogoJavascript color="teal" size="30px" />,
+    <BsGithub color="teal" size="30px"/>,
+    <SiNetlify color="teal" size="30px"/>
   ];
 
   const reactProjTech = [
@@ -37,6 +46,9 @@ export default function Projects() {
     ...reactProjTech,
     <SiExpress color="teal" size="30px" />,
     <SiMongodb color="teal" size="30px" />,
+    <BsGithub color="teal" size="30px"/>,
+    <SiVercel color="teal" size="30px"/>
+
   ];
 
   const Rc_tech = [
@@ -63,6 +75,15 @@ export default function Projects() {
 
 
   const projectsArr = [
+    {
+      img: ArtifyAI,
+      title: "ArtifyAI",
+      desc: "ArtifyAI is a responsive MERN stack application that generates AI-powered art from user input. It features secure login/signup, payment integration, and a modern design for a seamless user experience across all devices.",
+      tech_stack: fullstackTech,
+      gitHub: "https://github.com/VaishnaviDhobale/ArtifyAI",
+      deploy: "https://artify-ai-azure.vercel.app/",
+      type: "INDIVIDUAL",
+    },
     {
       img: DefencePost,
       title: "Defence Post",
@@ -93,7 +114,7 @@ export default function Projects() {
     {
       img: Amazon,
       title: "Buyify",
-      desc: "Developed an Amazon clone using the MERN stack, with features like product browsing, search, and filtering for an e-commerce browsing experience.",
+      desc: "Developed an Amazon clone using the MERN stack, featuring product browsing, search, and filtering for an enhanced e-commerce experience. I was responsible for building and managing the backend functionalities.",
       tech_stack: fullstackTech,
       gitHub: "https://github.com/aniketgarole/plum-push-2647",
       deploy: "https://peaceful-liger-051912.netlify.app/",
@@ -102,8 +123,8 @@ export default function Projects() {
     
     {
       img: LoseIt,
-      title: "Lose It! Website Clone",
-      desc: "Lose It! helps the User to adjust their weight according to user height, & helps the user to stay fit and healthy.",
+      title: "Cut The Fat",
+      desc: "Lose It! is a responsive design project that inspires users to maintain fitness and health by aligning their weight with their height. The project highlights a clean and engaging design concept.",
       tech_stack: techArr,
       gitHub: "https://github.com/VaishnaviDhobale/short-whip-5406",
       deploy: "https://spontaneous-cuchufli-e48ffa.netlify.app/",
