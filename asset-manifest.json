@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ffe34ec7.css",
-    "main.js": "/static/js/main.0075d139.js",
+    "main.js": "/static/js/main.cdbc2941.js",
     "static/js/787.1f11dfe9.chunk.js": "/static/js/787.1f11dfe9.chunk.js",
     "static/media/RCTravels.png": "/static/media/RCTravels.211cd606bc0c2fa5f0c9.png",
     "static/media/colmarProject.png": "/static/media/colmarProject.ec94b7870c8d2f27e41f.png",
@@ -17,11 +17,11 @@
     "static/media/Vaishnavi_Dhobale_Resume.pdf": "/static/media/Vaishnavi_Dhobale_Resume.0258c47a3fdbc0e4fb0b.pdf",
     "index.html": "/index.html",
     "main.ffe34ec7.css.map": "/static/css/main.ffe34ec7.css.map",
-    "main.0075d139.js.map": "/static/js/main.0075d139.js.map",
+    "main.cdbc2941.js.map": "/static/js/main.cdbc2941.js.map",
     "787.1f11dfe9.chunk.js.map": "/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ffe34ec7.css",
-    "static/js/main.0075d139.js"
+    "static/js/main.cdbc2941.js"
   ]
 }
