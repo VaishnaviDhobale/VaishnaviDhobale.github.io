@@ -19,6 +19,7 @@ import LoseIt from "../images/proj-2.png";
 import Proj3 from "../images/proj-3.png";
 import Amazon from "../images/proj-4.png";
 import DefencePost from "../images/Proj5.png";
+import ColmarProject from "../images/colmarProject.png"
 import RCTravels from "../images/RCTravels.png";
 import TheBookBridge from "../images/TheBookBridge.png"
 import { SiPhp } from "react-icons/si";
@@ -128,6 +129,15 @@ export default function Projects() {
       tech_stack: techArr,
       gitHub: "https://github.com/VaishnaviDhobale/short-whip-5406",
       deploy: "https://spontaneous-cuchufli-e48ffa.netlify.app/",
+      type: "INDIVIDUAL",
+    },
+    {
+      img: ColmarProject,
+      title: "Colmar Academy",
+      desc: "A responsive and modern educational landing page built using HTML and CSS. This project replicates a fictional educational institution called 'Colmar Academy', showcasing its features, programs, and offerings.",
+      tech_stack: techArr,
+      gitHub: "https://github.com/VaishnaviDhobale/Colmar-Academy-Project",
+      deploy: "https://vaishnavidhobale.github.io/Colmar-Academy-Project/",
       type: "INDIVIDUAL",
     }    
   ];
