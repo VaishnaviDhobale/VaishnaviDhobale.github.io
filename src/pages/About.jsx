@@ -4,7 +4,7 @@ import Pic from "../images/fully final.png";
 import { Theme } from "../ThemeContest/ThemeProvider";
 
 export default function About() {
-  let {theme,setTheme}= useContext(Theme);
+  let { theme, setTheme } = useContext(Theme);
   // console.log(theme)
   return (
     <Box
@@ -30,36 +30,51 @@ export default function About() {
         About Me
       </Text>
 
-
-      <Box display={"grid"} gridTemplateColumns= {{
-        base : "",
-        sm : "",
-        md :"30% 1fr"
-      }}>
+      <Box
+        display={"grid"}
+        gridTemplateColumns={{
+          base: "",
+          sm: "",
+          md: "30% 1fr",
+        }}
+      >
         <Box>
-          <Img margin={"auto"} src={Pic} borderRadius="50%" width={"150px"} className = "home-img"></Img>
+          <Img
+            margin={"auto"}
+            src={Pic}
+            borderRadius="50%"
+            width={"150px"}
+            className="home-img"
+          ></Img>
         </Box>
-        <Box textAlign={"left"} margin = "auto" width = {{
-          base : "80%",
-          sm : "80%",
-          md : "95%"
-        }}>
-          <Text id = "user-detail-intro">
-            Hi Everyone, My name is{" "}
+        <Box
+          textAlign={"left"}
+          margin="auto"
+          width={{
+            base: "80%",
+            sm: "80%",
+            md: "95%",
+          }}
+        >
+          <Text id="user-detail-intro">
+            Hi Everyone, My name{" "}
             <span style={{ color: "teal" }}>Vaishnavi Dhobale</span> and I am
-            from
+            from{" "}
             <span style={{ color: "teal" }}>
-              {" "}
-              Ahmednagar, Maharashtra (India)
+              Aahilyanagar, Maharashtra (India)
             </span>
             . I have completed my Diploma in{" "}
             <span style={{ color: "teal" }}>
-              Ashok polytechnic Ashoknagar(MH)
+              Ashok Polytechnic Ashoknagar (MH)
             </span>
-            . Then I joined full stack web development course by{" "}
-            <span style={{ color: "teal" }}>Masai School</span> a military type
-            coding school. Where I learned HTML, CSS, JavaScript, React, MongoDB, Node, Express etc. 
-            <span style={{ color: "teal" }}> Looking forward to work on real world project.</span>
+            . I have also completed my Bachelor of Engineering (BE) in Computer
+            Engineering. Additionally, I joined a full stack web development
+            course by <span style={{ color: "teal" }}>Masai School</span>, a
+            military-type coding school, where I learned HTML, CSS, JavaScript,
+            React, MongoDB, Node, Express, etc.{" "}
+            <span style={{ color: "teal" }}>
+              Looking forward to work on real world projects.
+            </span>
           </Text>
         </Box>
       </Box>

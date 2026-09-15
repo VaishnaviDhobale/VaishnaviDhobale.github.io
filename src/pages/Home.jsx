@@ -5,7 +5,7 @@ import { AiFillMail } from "react-icons/ai";
 import { AiFillPhone } from "react-icons/ai";
 import { useContext, useState } from "react";
 // import { MdDownload } from "react-icons/md";
-import MyResume from "../files/Vaishnavi-Dhobale-Resume.pdf";
+import MyResume from "../files/Vaishnavi_Dhobale_Resume.pdf";
 import { Theme } from "../ThemeContest/ThemeProvider";
 
 export default function Home() {
@@ -156,21 +156,22 @@ export default function Home() {
             href= {MyResume}
             className="nav-link resume"
             id="resume-link-2"
-            download="Vaishnavi-Dhobale-Resume"
+            // download="Vaishnavi-Dhobale-Resume"
             target="blank"
           >
             <Box
               onClick={() =>
                 openLink(
                   // "https://drive.google.com/file/d/1G6FYINHjgiVK0EmTnYDmX7fkx7GtdQpZ/view?usp=sharing"
-                  "https://drive.google.com/file/d/1QhvY5gMTdqGhlTsd5H-6pA2Dws_AuOmH/view?usp=sharing"
+                  "https://drive.google.com/file/d/1dQyv8ihgUtzF6jxmNdfI75lmsredmUUU/view?usp=sharing"
                 )
               }
               className="navbar-resume"
-              style = {{fontSize : "29px"}}
+              style = {{fontSize : "22px"}}
               id="resume-button-2"
+              fontWeight={"600"}
             >
-              Resume
+             Open Resume
             </Box>
           </a>
         </Box>

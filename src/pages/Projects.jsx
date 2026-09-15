@@ -134,7 +134,7 @@ export default function Projects() {
     {
       img: ColmarProject,
       title: "Colmar Academy",
-      desc: "A responsive and modern educational landing page built using HTML and CSS. This project replicates a fictional educational institution called 'Colmar Academy', showcasing its features, programs, and offerings.",
+      desc: "This is a basic and responsive landing page made using HTML and CSS. It shows a fake educational school called 'Colmar Academy' with its programs and features. This is just a practice project to help me improve my web design skills.",
       tech_stack: techArr,
       gitHub: "https://github.com/VaishnaviDhobale/Colmar-Academy-Project",
       deploy: "https://vaishnavidhobale.github.io/Colmar-Academy-Project/",

@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useContext } from "react";
 import { Theme } from "../ThemeContest/ThemeProvider";
 import {IoMdMoon} from "react-icons/io";
-import MyResume from "../files/Vaishnavi-Dhobale-Resume.pdf";
+import MyResume from "../files/Vaishnavi_Dhobale_Resume.pdf";
 
 
 export default function Navbar() {
@@ -107,6 +107,7 @@ export default function Navbar() {
           sm: "absolute",
           md: "sticky",
         }}
+        alignItems={"baseline"}
       >
         {navArr.map((el) => {
           return (
@@ -124,20 +125,25 @@ export default function Navbar() {
             id="resume-link-1"
             download="Vaishnavi-Dhobale-Resume"
             target="blank"
+             rel="noopener noreferrer"
             style = {{fontSize : "19px"}}
 
           >
             <Box
-              onClick={() =>
-                openLink(
-                  "https://drive.google.com/file/d/1QhvY5gMTdqGhlTsd5H-6pA2Dws_AuOmH/view?usp=sharing"
-                )
-              }
+              // onClick={() =>
+              //   openLink(
+              //     "https://drive.google.com/file/d/1QhvY5gMTdqGhlTsd5H-6pA2Dws_AuOmH/view?usp=sharing"
+              //   )
+              // }
               className="navbar-resume"
               id="resume-button-1"
               mr = "30px"
+              bg={"#008081"}
+              p={"10px 10px"}
+              borderRadius={"8px"}
+              fontWeight={"600"}
             >
-              Resume
+              Download Resume
             </Box>
           </a>
         </Box>
@@ -154,11 +160,11 @@ export default function Navbar() {
       }} top = {{
         base : "0px",
         sm : "0px",
-        md : "11px"
+        md : "21px"
       }} 
         right = {{
           base : "0px",
-          sm : "0px",
+          sm : "0px", 
           md : "1200px",
           lg : "none"
         }}

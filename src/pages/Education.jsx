@@ -8,7 +8,7 @@ export default function Education() {
       title: "Computer Engineering (BE)",
       clgName: "Sahyadri valley college of engineering",
       place: "Rajuri, Pune, Maharashtra",
-      duration: "pursuing",
+      duration: "April-2021 to November-2024",
       url: "",
       // text: "See Result",
     },
